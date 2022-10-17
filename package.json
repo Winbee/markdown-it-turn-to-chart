@@ -29,7 +29,7 @@
     "markdown-it",
     "markdown-it-plugin",
     "csv",
-    "markdown",
+    "table",
     "graph",
     "chart",
     "ui"
