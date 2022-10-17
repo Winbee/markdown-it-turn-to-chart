@@ -1,0 +1,53 @@
+{
+  "name": "markdown-it-turn-to-chart",
+  "version": "0.0.1",
+  "description": "Markdown-it plugin which renders an HTML charts based on markdown or csv tables",
+  "author": "Samuel Gagnepain",
+  "homepage": "https://github.com/Winbee/markdown-it-turn-to-chart",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/markdown-it-turn-to-chart.cjs",
+  "module": "./dist/markdown-it-turn-to-chart.js",
+  "exports": {
+    ".": {
+      "import": "./dist/markdown-it-turn-to-chart.js",
+      "require": "./dist/markdown-it-turn-to-chart.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "build:docs": "vite build --config vite-docs.config.ts",
+    "preview:docs": "vite preview  --config vite-docs.config.ts",
+    "test": "TZ=UTC vitest"
+  },
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "csv",
+    "markdown",
+    "graph",
+    "chart",
+    "ui"
+  ],
+  "peerDependencies": {
+    "markdown-it": "^12.3.2"
+  },
+  "dependencies": {
+    "markdown-it-fence": "^0.1.3",
+    "turn-to-chart": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^12.2.3",
+    "@types/prettier": "^2.7.1",
+    "markdown-it": "^13.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0",
+    "vitest": "^0.24.3"
+  }
+}
